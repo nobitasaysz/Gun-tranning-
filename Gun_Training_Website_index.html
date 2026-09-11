@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="Gun Training is a fitness and workout app for strength, consistency and discipline. Download the latest Android APK.">
+<title>Gun Training — Fitness & Workout App</title>
+<style>
+:root{--bg:#070707;--card:#111;--text:#f7f7f7;--muted:#a7a7a7;--line:rgba(255,255,255,.09);--red:#ff3030;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 80% 8%,rgba(255,30,30,.14),transparent 28%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(100% - 28px,var(--max));margin:auto}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,7,7,.84);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:900}
+.logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#101010;border:1px solid #6b1717;box-shadow:0 0 25px #ff000022;font-weight:1000}
+.brand b,h1 span{color:var(--red)}.links{display:flex;gap:25px;color:#aaa;font-size:14px}.navbtn,.btn{background:var(--red);border:1px solid var(--red);font-weight:900}
+.navbtn{padding:10px 15px;border-radius:12px;font-size:12px}
+.hero{padding:78px 0 65px}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.badge{display:inline-flex;gap:8px;padding:7px 11px;border-radius:99px;border:1px solid #ff303044;background:#ff30300d;color:#ffb1b1;font-size:12px;font-weight:800}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--red)}
+h1{font-size:clamp(46px,7vw,82px);line-height:.98;letter-spacing:-3px;margin:20px 0}
+.hero p{max-width:620px;color:var(--muted);font-size:18px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;border-radius:14px}
+.btn2{background:#151515;border-color:var(--line)}.version{margin-top:12px;color:#777;font-size:12px}
+.phonewrap{display:flex;justify-content:center}.phone{width:min(300px,82vw);aspect-ratio:9/18.5;border:8px solid #1c1c1c;border-radius:38px;background:#050505;box-shadow:0 30px 70px #000,0 0 50px #f0000020;overflow:hidden}
+.screen{height:100%;padding:45px 17px 16px;background:linear-gradient(#0d0d0d,#080808)}.top{display:flex;justify-content:space-between;margin-bottom:23px}.apptitle{font-size:21px;font-weight:950}.apptitle small{display:block;color:#777;font-size:8px;letter-spacing:1.5px}.mini{padding:16px;border:1px solid var(--line);border-radius:17px;background:#111;margin-bottom:10px}.redcard{border-color:#ff303044;background:#1b0b0b}.label{font-size:9px;color:#777;text-transform:uppercase;letter-spacing:1px}.big{font-size:23px;font-weight:950}.row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.bar{height:6px;background:#282828;border-radius:99px;margin-top:10px}.bar i{display:block;width:72%;height:100%;background:var(--red);border-radius:99px}
+section{padding:70px 0}.head{text-align:center;max-width:700px;margin:0 auto 38px}.eyebrow{color:var(--red);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}h2{font-size:clamp(31px,5vw,48px);line-height:1.05;margin:8px 0 11px}.head p,.card p{color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:linear-gradient(145deg,#ffffff0d,#ffffff03);border:1px solid var(--line);border-radius:21px;padding:23px}.icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:#ff30300e;border:1px solid #ff30302b;font-size:20px;margin-bottom:15px}.card h3{margin-bottom:6px}
+.workouts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.workout{display:flex;align-items:center;gap:14px;padding:16px;border:1px solid var(--line);background:#0e0e0e;border-radius:16px}.wi{font-size:25px;width:38px;text-align:center}.workout span{display:block;color:#777;font-size:12px}
+.modes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.download{padding:50px 22px;text-align:center;border:1px solid #ff303033;border-radius:27px;background:radial-gradient(circle at 50% 0,#ff00002b,transparent 52%),#101010}.download p{max-width:630px;margin:9px auto 23px;color:var(--muted)}.meta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;color:#777;font-size:12px;margin-top:14px}
+.faq{max-width:780px;margin:auto}details{border-bottom:1px solid var(--line);padding:18px 0}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);padding-top:10px;font-size:14px}
+footer{border-top:1px solid var(--line);padding:34px 0;color:#777;font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.foot b{color:#fff}.flinks{display:flex;gap:18px}
+@media(max-width:800px){.links{display:none}.heroGrid{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.actions{justify-content:center}.phonewrap{margin-top:10px}.grid3,.modes{grid-template-columns:1fr}}
+@media(max-width:520px){.container{width:min(100% - 22px,var(--max))}.brand{font-size:14px}.navbtn{padding:9px 10px}.hero{padding-top:55px}.btn{width:100%}.workouts{grid-template-columns:1fr}section{padding:55px 0}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+<div class="container navin">
+<a class="brand" href="#home"><div class="logo">GT</div><span>GUN <b>TRAINING</b></span></a>
+<nav class="links"><a href="#features">Features</a><a href="#workouts">Workouts</a><a href="#download">Download</a><a href="#faq">FAQ</a></nav>
+<a class="navbtn" href="#download">DOWNLOAD APK</a>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container heroGrid">
+<div>
+<div class="badge"><i></i> FITNESS • TRAINING • DISCIPLINE</div>
+<h1>Train hard.<br><span>Stay disciplined.</span></h1>
+<p>Gun Training is a fitness and workout app built to help you train consistently with structured workouts, timed exercises, cardio, recovery sessions and a 7-day challenge.</p>
+<div class="actions"><a class="btn" href="#download">⬇ Download Latest APK</a><a class="btn btn2" href="#features">Explore Features</a></div>
+<div class="version">Latest version: <b>V1.0</b> • Android</div>
+</div>
+<div class="phonewrap">
+<div class="phone"><div class="screen">
+<div class="top"><div class="apptitle">Gun Training<small>DISCIPLINE • CONSISTENCY • PROGRESS</small></div><div>🔥</div></div>
+<div class="mini redcard"><div class="label">Daily challenge</div><div class="big">7-Day Training</div><div class="bar"><i></i></div></div>
+<div class="row"><div class="mini"><div class="label">Mode</div><div class="big">Normal</div></div><div class="mini"><div class="label">Today</div><div class="big">Day 1</div></div></div>
+<div class="mini"><div class="label">Next workout</div><div class="big">Chest + Core</div></div>
+<div class="mini"><div class="label">Recovery</div><div style="color:#59d98e;font-weight:800">Included ✓</div></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section id="features">
+<div class="container">
+<div class="head"><div class="eyebrow">Why Gun Training</div><h2>Everything you need to stay consistent.</h2><p>A simple training system built around workouts, timing, recovery and progress.</p></div>
+<div class="grid3">
+<div class="card"><div class="icon">⏱️</div><h3>Timed Exercises</h3><p>Work and rest intervals keep each exercise structured.</p></div>
+<div class="card"><div class="icon">📅</div><h3>7-Day Challenge</h3><p>Follow a balanced weekly routine with training and recovery.</p></div>
+<div class="card"><div class="icon">🎚️</div><h3>3 Training Modes</h3><p>Choose Normal, Medium or Hard and change it later.</p></div>
+<div class="card"><div class="icon">🔥</div><h3>Daily Workouts</h3><p>Organized sessions covering different body areas.</p></div>
+<div class="card"><div class="icon">🏃</div><h3>Cardio & Running</h3><p>Keep cardio as part of your routine with manageable sessions.</p></div>
+<div class="card"><div class="icon">💾</div><h3>Progress</h3><p>Your profile and local training progress stay saved on your device.</p></div>
+</div>
+</div>
+</section>
+
+<section id="workouts">
+<div class="container">
+<div class="head"><div class="eyebrow">Workout Library</div><h2>Train every part of your routine.</h2><p>Explore focused categories inside the app.</p></div>
+<div class="workouts">
+<div class="workout"><div class="wi">🔥</div><div><b>Warm-up</b><span>Prepare before training</span></div></div>
+<div class="workout"><div class="wi">🏃</div><div><b>Running / Cardio</b><span>Build conditioning</span></div></div>
+<div class="workout"><div class="wi">💪</div><div><b>Chest</b><span>Upper-body training</span></div></div>
+<div class="workout"><div class="wi">🦵</div><div><b>Legs</b><span>Lower-body training</span></div></div>
+<div class="workout"><div class="wi">💪</div><div><b>Arms</b><span>Arm-focused exercises</span></div></div>
+<div class="workout"><div class="wi">⚡</div><div><b>Core</b><span>Core-focused training</span></div></div>
+<div class="workout"><div class="wi">🏋️</div><div><b>Shoulders</b><span>Shoulder exercises</span></div></div>
+<div class="workout"><div class="wi">🔙</div><div><b>Back</b><span>Back-focused training</span></div></div>
+<div class="workout"><div class="wi">🔥</div><div><b>Full Body</b><span>Complete-body sessions</span></div></div>
+<div class="workout"><div class="wi">🧘</div><div><b>Recovery</b><span>Rest and cooldown</span></div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="head"><div class="eyebrow">Training Modes</div><h2>Choose your level.</h2><p>Your mode can be changed later from Settings.</p></div>
+<div class="modes">
+<div class="card"><h3>🌱 Normal</h3><p>Start with balanced training and build consistency.</p></div>
+<div class="card"><h3>⚡ Medium</h3><p>Increase the challenge while keeping recovery included.</p></div>
+<div class="card"><h3>🔥 Hard</h3><p>A more challenging option for users ready for higher training demand.</p></div>
+</div>
+</div>
+</section>
+
+<section id="download">
+<div class="container">
+<div class="download">
+<div class="eyebrow">Official Download</div><h2>Get Gun Training</h2>
+<p>Download the latest Android APK and start your training journey. Check the version before installing.</p>
+<!-- REPLACE THIS URL after uploading your APK release -->
+<a class="btn" href="https://github.com/YOUR-USERNAME/gun-training/releases/latest/download/Gun-Training-v1.0.apk">⬇ Download Latest APK</a>
+<div class="meta"><span>📱 Android</span><span>🔢 V1.0</span><span>🆓 Free</span><span>📦 APK</span></div>
+</div>
+</div>
+</section>
+
+<section id="faq">
+<div class="container"><div class="head"><div class="eyebrow">FAQ</div><h2>Frequently asked questions.</h2></div>
+<div class="faq">
+<details><summary>What is Gun Training?</summary><p>Gun Training is a fitness and workout app focused on structured exercise, consistency, cardio, recovery and progress.</p></details>
+<details><summary>Is Gun Training free?</summary><p>The current version is provided as a free Android APK.</p></details>
+<details><summary>Can I change the training mode?</summary><p>Yes. The app supports Normal, Medium and Hard modes, and the mode can be changed later from Settings.</p></details>
+<details><summary>Will there be future updates?</summary><p>Yes. Future versions can add new workouts, improvements, design updates and additional features.</p></details>
+<details><summary>Where should I download the APK?</summary><p>Use the official download button on this website and verify the version before installing.</p></details>
+</div></div>
+</section>
+</main>
+
+<footer><div class="container foot"><div><b>GUN TRAINING</b><br>Discipline • Consistency • Progress</div><div class="flinks"><a href="#home">Home</a><a href="#features">Features</a><a href="#download">Download</a></div><div>© 2026 Gun Training</div></div></footer>
+</body>
+</html>
